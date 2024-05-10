@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+  	<Protobuf Include="Protos\hello.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.Tools" Version="2.63.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Ten.gRPC.CorporateConfiguration.ClientLib" Version="1.0.8895.248" />
+	<PackageReference Include="Ten.Shared" Version="2.0.8644.1758-v2.0-alpha" />
+	<PackageReference Include="Ten.Shared.Authentication.Signature" Version="2.0.8882.70-beta-slim" />
+	<PackageReference Include="Ten.Shared.Authentication.TenMaid" Version="2.0.8882.70-beta-slim" />
+	<PackageReference Include="Ten.Shared.Templates.AspNetCore" Version="2.0.8887.74-beta-slim" />
+	<PackageReference Include="Ten.Shared.Templates.GrpcApi" Version="2.0.8882.70-beta-slim" />
+	<PackageReference Include="TenMaid.Shared.AspNetCore" Version="1.0.7867.178" />
+  </ItemGroup>
+
+</Project>
